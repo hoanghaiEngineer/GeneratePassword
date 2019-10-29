@@ -1,7 +1,3 @@
- // account.Password = App.PasswordHasher.Hash(
-                    // HashType.Default,
-                    // PasswordGenerator.AutoGenerate(8)
-                // );
 using System;
 using System.Collections.Generic;
 
@@ -28,6 +24,8 @@ namespace Cosmenist.Utility.Security
                  *      select a random number
                  *  else
                  *      select a random abc alphabet
+                 *  
+                 * Note: Random.Next method => Returns a random integer.
                  */
                 keys = keys.Insert(0,
                     random.Next(2) == 1 ?
